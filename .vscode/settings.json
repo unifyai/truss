@@ -2,7 +2,7 @@
   // Global settings that applies to all baseten developers
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": ".flake8",
-  "python.formatting.provider": "black",
+  "python.formatting.provider": "none",
   "python.testing.unittestEnabled": false,
   "python.testing.pytestEnabled": true,
   "python.testing.pytestArgs": ["truss"],
@@ -14,6 +14,7 @@
       "source.fixAll": true,
       "source.organizeImports": true,
       "source.sortMembers": true
-    }
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter"
   }
 }

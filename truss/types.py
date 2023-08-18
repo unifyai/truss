@@ -16,6 +16,7 @@ class ModelFrameworkType(Enum):
     XGBOOST = "xgboost"
     LIGHTGBM = "lightgbm"
     MLFLOW = "mlflow"
+    IVY = "ivy"
     CUSTOM = "custom"
 
 

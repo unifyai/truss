@@ -10,6 +10,7 @@ PYTORCH = "pytorch"
 CUSTOM = "custom"
 HUGGINGFACE_TRANSFORMER = "huggingface_transformer"
 LIGHTGBM = "lightgbm"
+IVY = "ivy"
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CODE_DIR = pathlib.Path(BASE_DIR, "truss")
@@ -89,6 +90,8 @@ PYTORCH_REQ_MODULE_NAMES: Set[str] = {
 }
 
 MLFLOW_REQ_MODULE_NAMES: Set[str] = {"mlflow"}
+
+IVY_REQ_MODULE_NAMES: Set[str] = {"ivy"}
 
 INFERENCE_SERVER_PORT = 8080
 

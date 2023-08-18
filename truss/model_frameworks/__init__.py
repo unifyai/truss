@@ -9,6 +9,7 @@ from truss.model_frameworks.mlflow import Mlflow
 from truss.model_frameworks.pytorch import PyTorch
 from truss.model_frameworks.sklearn import SKLearn
 from truss.model_frameworks.xgboost import XGBoost
+from truss.model_frameworks.ivy import Ivy
 from truss.types import ModelFrameworkType
 
 MODEL_FRAMEWORKS_BY_TYPE = {
@@ -19,6 +20,7 @@ MODEL_FRAMEWORKS_BY_TYPE = {
     ModelFrameworkType.XGBOOST: XGBoost(),
     ModelFrameworkType.LIGHTGBM: LightGBM(),
     ModelFrameworkType.MLFLOW: Mlflow(),
+    ModelFrameworkType.IVY: Ivy()
 }
 
 
@@ -30,6 +32,7 @@ SUPPORTED_MODEL_FRAMEWORKS = [
     ModelFrameworkType.XGBOOST,
     ModelFrameworkType.PYTORCH,
     ModelFrameworkType.LIGHTGBM,
+    ModelFrameworkType.IVY,
 ]
 
 

@@ -13,6 +13,7 @@ from truss.constants import (
     SKLEARN,
     TENSORFLOW,
     XGBOOST,
+    IVY,
 )
 from truss.errors import FrameworkNotSupportedError
 
@@ -23,7 +24,7 @@ def _infer_model_framework(model_class: Any):
     model_framework, _, _ = model_class.__module__.partition(".")
     if model_framework == "transformers":
         return HUGGINGFACE_TRANSFORMER
-    if model_framework not in {SKLEARN, TENSORFLOW, KERAS, LIGHTGBM, XGBOOST}:
+    if model_framework not in {SKLEARN, TENSORFLOW, KERAS, LIGHTGBM, XGBOOST, IVY}:
         try:
             import torch
 
